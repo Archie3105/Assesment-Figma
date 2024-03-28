@@ -1,0 +1,250 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* **************Header & Navebad****************** */
+
+.header-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  display: inline;
+}
+nav {
+  /* margin-left: 15rem; */
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+}
+nav ul li a {
+  position: relative;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul li a:after {
+  position: absolute;
+  content: "";
+  height: 0.1rem;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+
+  /****** 
+       optional values below 
+       ******/
+
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: black;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  background-color: aqua;
+  color: aqua;
+}
+
+/* *************About Complany************* */
+
+.about-container {
+  /* display: flex; */
+  /* border: 1px solid; */
+  /* padding: 2rem; */
+  margin: 2rem auto;
+  text-indent: 1rem;
+}
+.about-container span {
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+    0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      18% 28% at 24% 50%,
+      rgb(52, 80, 83) 7%,
+      #073aff00 100%
+    ),
+    radial-gradient(18% 28% at 18% 71%, #ffffff59 6%, #073aff00 100%),
+    radial-gradient(70% 53% at 36% 76%, #73f2ffff 0%, #073aff00 100%),
+    radial-gradient(42% 53% at 15% 94%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 34% 72%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(18% 28% at 35% 87%, #ffffffff 7%, #073aff00 100%),
+    radial-gradient(31% 43% at 7% 98%, #ffffffff 24%, #073aff00 100%),
+    radial-gradient(21% 37% at 72% 23%, #d3ff6d9c 24%, #073aff00 100%),
+    radial-gradient(35% 56% at 91% 74%, #8a4ffff5 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+    linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+}
+.about-container h1 {
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+}
+.about-container p {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+.about-container button {
+  display: flex;
+  border-radius: 35px;
+  font-size: 1rem;
+  margin: 2rem auto;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+.about-container button i {
+  font-size: larger;
+}
+
+/* ***************Footer************* */
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+hr {
+  width: 90%;
+}
+
+/* **********Card Section********** */
+.card {
+  background-color: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  /* width: 100%; */
+}
+.card-heading {
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+.card-heading h1 {
+  display: flex;
+  font-size: 2rem;
+  margin-top: 1px;
+}
+.card-heading p {
+  margin-top: -2rem;
+  font-weight: 600;
+}
+
+/* **********arrow button********** */
+.btn {
+  position: relative;
+  margin-right: 5rem;
+}
+.btn i {
+  font-size: 1.2rem;
+  margin: 0.4rem;
+  padding: 0.5rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+.btn i:hover {
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+/* ***********card-containers************* */
+.card-containers {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 0rem 3rem 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 18.3125rem;
+  height: 25.125rem;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0.3rem;
+}
+.box h2 {
+  margin-top: 2rem;
+}
+.box img {
+  display: flex;
+  width: 15rem;
+  height: 8.965rem;
+  margin: 0 auto;
+  margin-bottom: -15px;
+}
+.box button {
+  display: flex;
+  border-radius: 35px;
+  font-size: 1rem;
+  margin: auto;
+  margin-right: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* ********HR Border********* */
+#hr-top {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 0.1rem;
+}
+
+#hr-bottom {
+  width: 100%;
+  border: 1px solid black;
+}
+
+
+/* ***************media  query for mobile view******************/ 
+@media only screen and (min-width:500px) and (max-width: 0px) {
+    .about-container h1{
+      font-size: 1rem;
+    }
+}
